@@ -30,6 +30,10 @@ public class PricingController {
 		
 	}
 	
+	public void getHelloWorld() {
+		print("Hello World!")
+	}
+	
 	@PostMapping("/pricing")
 	public void addPricing(@RequestBody Pricing pricing)
 			throws InvalidPricingDefinitionException, PricingIdDuplicationException {
